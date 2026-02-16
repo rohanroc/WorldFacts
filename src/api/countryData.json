@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "countryName": "India",
+        "capital": "New Delhi",
+        "population": 1476625576,
+        "interestingFact": "India officially surpassed China as the world's most populous country in 2023."
+    },
+    {
+        "id": 2,
+        "countryName": "China",
+        "capital": "Beijing",
+        "population": 1412914089,
+        "interestingFact": "China is experiencing its first population decline in decades due to low birth rates and an aging demographic."
+    },
+    {
+        "id": 3,
+        "countryName": "United States",
+        "capital": "Washington, D.C.",
+        "population": 349035494,
+        "interestingFact": "Growth in the U.S. is primarily driven by international migration rather than natural increase."
+    },
+    {
+        "id": 4,
+        "countryName": "Indonesia",
+        "capital": "Jakarta",
+        "population": 287886782,
+        "interestingFact": "Indonesia is the world's largest island nation and has a significant youth demographic."
+    },
+    {
+        "id": 5,
+        "countryName": "Pakistan",
+        "capital": "Islamabad",
+        "population": 259299791,
+        "interestingFact": "Pakistan has one of the fastest-growing populations in the world, with a very young median age."
+    },
+    {
+        "id": 6,
+        "countryName": "Nigeria",
+        "capital": "Abuja",
+        "population": 242431832,
+        "interestingFact": "Nigeria is Africa's most populous country and is projected to reach half a billion people by 2100."
+    },
+    {
+        "id": 7,
+        "countryName": "Brazil",
+        "capital": "Brasilia",
+        "population": 213562666,
+        "interestingFact": "Brazil is the largest country in South America, though its population growth has begun to slow."
+    },
+    {
+        "id": 8,
+        "countryName": "Bangladesh",
+        "capital": "Dhaka",
+        "population": 177818044,
+        "interestingFact": "Bangladesh is one of the most densely populated countries, known for its industrious manufacturing workforce."
+    },
+    {
+        "id": 9,
+        "countryName": "Russia",
+        "capital": "Moscow",
+        "population": 143394458,
+        "interestingFact": "Despite being the largest country by area, Russia's population is currently in decline."
+    },
+    {
+        "id": 10,
+        "countryName": "Ethiopia",
+        "capital": "Addis Ababa",
+        "population": 138902185,
+        "interestingFact": "Ethiopia is one of the fastest-growing nations in Africa, with a majority of its population under age 20."
+    },
+    {
+        "id": 11,
+        "countryName": "Mexico",
+        "capital": "Mexico City",
+        "population": 132997658,
+        "interestingFact": "Mexico City is one of the largest metropolitan areas in the world by population."
+    },
+    {
+        "id": 12,
+        "countryName": "Japan",
+        "capital": "Tokyo",
+        "population": 122427731,
+        "interestingFact": "Japan has the world's oldest median age and has seen its population shrink for several consecutive years."
+    },
+    {
+        "id": 13,
+        "countryName": "Egypt",
+        "capital": "Cairo",
+        "population": 120101175,
+        "interestingFact": "Most of Egypt's population is concentrated along the banks of the Nile River."
+    },
+    {
+        "id": 14,
+        "countryName": "Philippines",
+        "capital": "Manila",
+        "population": 117724471,
+        "interestingFact": "The Philippines is an archipelago where rapid urbanization is a major demographic trend."
+    },
+    {
+        "id": 15,
+        "countryName": "DR Congo",
+        "capital": "Kinshasa",
+        "population": 116452162,
+        "interestingFact": "The Democratic Republic of the Congo has one of the highest fertility rates globally."
+    },
+    {
+        "id": 16,
+        "countryName": "Vietnam",
+        "capital": "Hanoi",
+        "population": 102177431,
+        "interestingFact": "Vietnam reached the 100 million population milestone in 2023."
+    },
+    {
+        "id": 17,
+        "countryName": "Iran",
+        "capital": "Tehran",
+        "population": 93168497,
+        "interestingFact": "Iran has a highly urbanized population, with the majority living in major cities like Tehran."
+    },
+    {
+        "id": 18,
+        "countryName": "Turkey",
+        "capital": "Ankara",
+        "population": 87926082,
+        "interestingFact": "Turkey serves as a major demographic and geographic bridge between Europe and Asia."
+    },
+    {
+        "id": 19,
+        "countryName": "Germany",
+        "capital": "Berlin",
+        "population": 83644258,
+        "interestingFact": "Germany has the largest population in the European Union but faces significant aging challenges."
+    },
+    {
+        "id": 20,
+        "countryName": "Tanzania",
+        "capital": "Dodoma",
+        "population": 72563780,
+        "interestingFact": "Tanzania is experiencing rapid growth and is expected to nearly double its population by 2050."
+    }
+]
