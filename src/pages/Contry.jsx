@@ -1,12 +1,13 @@
 import { useEffect, useState, useTransition } from "react";
 import { NavLink } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaSearch } from "react-icons/fa";
 import { getCountryData } from "../api/postApi";
 
 const Contry = () => {
     const [isPending, startTransition] = useTransition();
     const [countries, setCountries] = useState([]);
     const [error, setError] = useState(null);
+    const [search, setSearch] = useState("");
 
     useEffect(() => {
         startTransition(async () => {
@@ -19,6 +20,10 @@ const Contry = () => {
             }
         });
     }, []);
+
+    const filteredCountries = countries.filter((country) =>
+        country.name.common.toLowerCase().includes(search.toLowerCase())
+    );
 
     if (isPending) {
         return (
@@ -45,20 +50,39 @@ const Contry = () => {
         <section className="bg-[#0a0a0c] py-12 lg:py-24">
             <div className="container mx-auto px-6">
 
-                <div className="mb-16 flex flex-col items-end justify-between gap-6 border-b border-white/5 pb-8 md:flex-row">
-                    <div className="w-full text-left">
-                        <h2 className="text-4xl font-black uppercase tracking-tighter text-white md:text-6xl">
-                            Global <span className="text-cyan-500 italic">Inventory</span>
-                        </h2>
-                        <p className="mt-4 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-gray-500">
-                            <span className="inline-block h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
-                            Live Connection: {countries.length} Territories Identified
-                        </p>
+                {/* HEADER SECTION */}
+                <div className="mb-16 text-center">
+                    <h2 className="text-4xl font-black uppercase tracking-tighter text-white md:text-7xl">
+                        Global <span className="text-cyan-500 italic">Inventory</span>
+                    </h2>
+                    <p className="mt-4 flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-gray-500">
+                        <span className="inline-block h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
+                        Live Connection: {filteredCountries.length} Territories Identified
+                    </p>
+
+                    {/* BIG CENTERED SEARCH BAR */}
+                    <div className="mt-12 flex justify-center">
+                        <div className="relative w-full max-w-2xl group">
+                            <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-cyan-500 to-indigo-600 opacity-20 blur transition duration-300 group-focus-within:opacity-50"></div>
+                            <div className="relative">
+                                <FaSearch className="absolute left-6 top-1/2 -translate-y-1/2 text-xl text-gray-500 transition-colors group-focus-within:text-cyan-400" />
+                                <input
+                                    type="text"
+                                    placeholder="Search for a country or territory..."
+                                    value={search}
+                                    onChange={(e) => setSearch(e.target.value)}
+                                    className="w-full rounded-2xl border border-white/10 bg-[#161b22]/80 px-16 py-6 text-lg text-white placeholder-gray-500 backdrop-blur-xl transition-all focus:border-cyan-500/50 focus:outline-none focus:ring-4 focus:ring-cyan-500/10 shadow-2xl"
+                                />
+                                <div className="absolute right-6 top-1/2 -translate-y-1/2 hidden sm:block">
+                                    <span className="rounded-md border border-white/10 bg-white/5 px-2 py-1 text-[10px] font-bold text-gray-500">ESC</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <ul className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                    {countries.map((country, index) => {
+                    {filteredCountries.map((country, index) => {
                         const { flags, name, population, region, capital } = country;
                         return (
                             <li key={index} className="group list-none">
@@ -95,7 +119,7 @@ const Contry = () => {
                                         </div>
 
                                         <div className="mt-6">
-                                            <NavLink to={`/country/${name.common}`}>
+                                            <NavLink to={`https://data.worldbank.org{name.common}`} target="_blank">
                                                 <button className="flex w-full items-center justify-center gap-2 rounded-xl bg-white/5 py-3 text-xs font-bold uppercase tracking-[0.2em] text-white transition-all hover:bg-cyan-500 hover:text-[#0a0a0c] hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] hover:cursor-pointer">
                                                     Read More
                                                     <FaArrowRight className="text-[10px]" />
