@@ -35,9 +35,9 @@ const Footer = () => {
                     <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
                         <div className="text-center md:text-left">
                             <p className="text-sm text-gray-500">
-                                Copyright &copy; 2026, All Rights Reserved{" "}
-                                <NavLink to="/" className="font-bold text-white hover:text-cyan-400">
-                                    WorldFacts
+                                Copyright &copy; 2026, Made with ❤️ by{" "}
+                                <NavLink to="https://www.github.com/rohanroc/" target="_blank" className="font-bold text-white hover:text-cyan-400">
+                                    Arijit
                                 </NavLink>
                             </p>
                         </div>

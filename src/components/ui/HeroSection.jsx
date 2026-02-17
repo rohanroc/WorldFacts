@@ -1,4 +1,5 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
     return (
@@ -29,11 +30,12 @@ const HeroSection = () => {
                         </p>
 
                         <div className="flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
-                            <button className="group flex items-center gap-3 rounded-full bg-cyan-500 px-8 py-4 text-sm font-bold uppercase tracking-widest text-[#0a0a0c] transition-all hover:bg-white hover:shadow-[0_0_25px_rgba(34,211,238,0.5)] hover:cursor-pointer">
-                                Start Exploring
-                                <FaLongArrowAltRight className="transition-transform group-hover:translate-x-2" />
-                            </button>
-
+                            <Link to={'/country'}>
+                                <button className="group flex items-center gap-3 rounded-full bg-cyan-500 px-8 py-4 text-sm font-bold uppercase tracking-widest text-[#0a0a0c] transition-all hover:bg-white hover:shadow-[0_0_25px_rgba(34,211,238,0.5)] hover:cursor-pointer">
+                                    Start Exploring
+                                    <FaLongArrowAltRight className="transition-transform group-hover:translate-x-2" />
+                                </button>
+                            </Link>
                             {/* <button className="rounded-full border border-white/10 bg-white/5 px-8 py-4 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-white/10">
                                 View Map
                             </button> */}
