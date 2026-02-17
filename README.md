@@ -1,16 +1,37 @@
-# React + Vite
+# 🌍 WorldFacts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance web application built with **React** and **Tailwind CSS** to explore global data. **WorldFacts** provides users with an interactive "Cyber-Grid" interface to discover detailed information about every country, territory, and nation across the globe.
 
-Currently, two official plugins are available:
+🚀 **[Live Demo](https://world-facts-ruddy.vercel.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **🌐 Interactive World Inventory**: Browse a complete list of 249+ countries and territories.
+- **🔍 Advanced Real-time Search**: Instantly filter countries using a sleek, centered search bar with glowing glassmorphic effects.
+- **📱 Responsive Cyber-Grid**: A fully responsive layout that adapts from mobile to ultra-wide desktop monitors.
+- **💎 Glassmorphism UI**: High-end aesthetic featuring semi-transparent backgrounds, neon accents, and smooth backdrop blurs.
+- **⚡ Performance Optimized**: Utilizes React's `useTransition` and `Suspense` for a fluid, lag-free user experience.
+- **📊 Detailed Insights**: View essential data for every nation, including populations, capitals, and regions, with "Read More" links to deep-dive data.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend**: [React](https://react.dev) (Hooks, Context API, useTransition)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com) (Custom glassmorphism & animations)
+- **Icons**: [React Icons](https://react-icons.github.io)
+- **Routing**: [React Router DOM](https://reactrouter.com)
+- **API**: [REST Countries API](https://restcountries.com)
+- **Deployment**: [Vercel](https://vercel.com/)
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/rohanroc/WorldFacts
