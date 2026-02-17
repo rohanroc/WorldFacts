@@ -119,7 +119,7 @@ const Contry = () => {
                                         </div>
 
                                         <div className="mt-6">
-                                            <NavLink to={`https://data.worldbank.org{name.common}`} target="_blank">
+                                            <NavLink to={`https://data.worldbank.org/country/${(name.common).toLowerCase()}`} target="_blank">
                                                 <button className="flex w-full items-center justify-center gap-2 rounded-xl bg-white/5 py-3 text-xs font-bold uppercase tracking-[0.2em] text-white transition-all hover:bg-cyan-500 hover:text-[#0a0a0c] hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] hover:cursor-pointer">
                                                     Read More
                                                     <FaArrowRight className="text-[10px]" />
