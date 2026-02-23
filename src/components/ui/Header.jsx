@@ -18,10 +18,10 @@ const Header = () => {
 
                     <div className="flex items-center">
                         <NavLink to="/" className="group flex items-center gap-3">
-                            <div className="flex h-10 w-10 items-center justify-center rounded-br-2xl rounded-tl-2xl bg-gradient-to-br from-indigo-600 to-cyan-500 shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-transform group-hover:scale-110">
+                            <div className="flex h-10 w-10 items-center justify-center rounded-br-2xl rounded-tl-2xl bg-linear-to-br from-indigo-600 to-cyan-500 shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-transform group-hover:scale-110">
                                 <span className="text-xl font-bold text-white">W</span>
                             </div>
-                            <h1 className="bg-gradient-to-r from-white to-gray-500 bg-clip-text text-2xl font-black italic tracking-tighter text-transparent">
+                            <h1 className="bg-linear-to-r from-white to-gray-500 bg-clip-text text-2xl font-black italic tracking-tighter text-transparent">
                                 WORLD<span className="text-cyan-500 underline decoration-cyan-500/30">Facts</span>
                             </h1>
                         </NavLink>

@@ -63,7 +63,7 @@ const Contry = () => {
                     {/* BIG CENTERED SEARCH BAR */}
                     <div className="mt-12 flex justify-center">
                         <div className="relative w-full max-w-2xl group">
-                            <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-cyan-500 to-indigo-600 opacity-20 blur transition duration-300 group-focus-within:opacity-50"></div>
+                            <div className="absolute -inset-1 rounded-2xl bg-linear-to-r from-cyan-500 to-indigo-600 opacity-20 blur transition duration-300 group-focus-within:opacity-50"></div>
                             <div className="relative">
                                 <FaSearch className="absolute left-6 top-1/2 -translate-y-1/2 text-xl text-gray-500 transition-colors group-focus-within:text-cyan-400" />
                                 <input
@@ -114,7 +114,7 @@ const Contry = () => {
                                             </p>
                                             <p className="flex justify-between">
                                                 <span className="font-bold uppercase tracking-widest text-cyan-500/60 text-[10px]">Capital:</span>
-                                                <span className="text-gray-300 truncate max-w-[120px] text-right">{capital?.[0] || "Unknown"}</span>
+                                                <span className="text-gray-300 truncate max-w-30 text-right">{capital?.[0] || "Unknown"}</span>
                                             </p>
                                         </div>
 

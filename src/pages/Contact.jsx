@@ -19,11 +19,11 @@ const Contact = () => {
                     <h2 className="text-4xl font-black uppercase tracking-tighter text-white md:text-6xl">
                         Contact <span className="text-cyan-500">Us</span>
                     </h2>
-                    <div className="mx-auto mt-4 h-1.5 w-20 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600"></div>
+                    <div className="mx-auto mt-4 h-1.5 w-20 rounded-full bg-linerar-to-r from-cyan-500 to-indigo-600"></div>
                     <p className="mt-6 text-gray-400">Have questions about a specific territory? Reach out to our global team.</p>
                 </div>
 
-                <div className="mx-auto max-w-2xl rounded-[2rem] border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-8 backdrop-blur-md md:p-12">
+                <div className="mx-auto max-w-2xl rounded-4xl border border-white/10 bg-linerar-to-b from-white/5 to-transparent p-8 backdrop-blur-md md:p-12">
                     <form action={handleFormSubmit} className="space-y-6">
                         <div className="group relative">
                             <input

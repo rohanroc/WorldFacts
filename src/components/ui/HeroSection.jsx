@@ -18,7 +18,7 @@ const HeroSection = () => {
 
                         <h1 className="text-5xl font-black leading-tight tracking-tighter text-white sm:text-6xl lg:text-6xl">
                             Explore the World, <br />
-                            <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">
+                            <span className="bg-linear-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">
                                 One Country
                             </span> at a Time.
                         </h1>
@@ -44,7 +44,7 @@ const HeroSection = () => {
 
                     <div className="relative">
                         <div className="absolute -inset-4 rounded-full bg-cyan-500/10 blur-3xl"></div>
-                        <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-4">
+                        <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-linear-to-b from-white/5 to-transparent p-4">
                             <img
                                 src="https://images.unsplash.com/photo-1706823871410-ed8b01faef7e?q=80&w=929&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt="world is beauty"

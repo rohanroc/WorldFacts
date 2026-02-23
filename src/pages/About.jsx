@@ -10,7 +10,7 @@ const About = () => {
                         <br />
                         we’re proud of
                     </h2>
-                    <div className="mt-4 h-1 w-24 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-full mx-auto lg:mx-0"></div>
+                    <div className="mt-4 h-1 w-24 bg-linear-to-r from-cyan-500 to-indigo-600 rounded-full mx-auto lg:mx-0"></div>
                 </div>
 
                 <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -19,7 +19,7 @@ const About = () => {
                         return (
                             <div
                                 key={id}
-                                className="group relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-px transition-all duration-300 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(34,211,238,0.1)]"
+                                className="group relative overflow-hidden rounded-3xl border border-white/10 bg-linear-to-b from-white/5 to-transparent p-px transition-all duration-300 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(34,211,238,0.1)]"
                             >
                                 <div className="relative h-full rounded-[23px] bg-[#0f1115] p-8">
                                     <p className="mb-4 text-2xl font-bold tracking-tight text-white group-hover:text-cyan-400 transition-colors">

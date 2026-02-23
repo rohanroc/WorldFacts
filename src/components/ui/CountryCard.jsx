@@ -34,7 +34,7 @@ const CountryCard = ({ country }) => {
                         </div>
                         <div className="flex justify-between">
                             <span className="font-bold uppercase tracking-widest text-cyan-500/60 text-[10px]">Capital</span>
-                            <span className="text-gray-300 truncate max-w-[120px] text-right">{capital?.[0] || "N/A"}</span>
+                            <span className="text-gray-300 truncate max-w-30 text-right">{capital?.[0] || "N/A"}</span>
                         </div>
                     </div>
 
